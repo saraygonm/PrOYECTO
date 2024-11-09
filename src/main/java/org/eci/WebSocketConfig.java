@@ -18,8 +18,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/ws")
-                .setAllowedOriginPatterns("https://minerace-c0ejf5dmd0cxf4b4.canadacentral-01.azurewebsites.net/") // Cambia esto por tu URL de frontend
+        registry.addEndpoint("/wss")
+                .setAllowedOriginPatterns("proyectoarsw-fjenh2cfb0huepd7.eastus-01.azurewebsites.net/") // Cambia esto por tu URL de frontend
                 .withSockJS();
     }
 }
